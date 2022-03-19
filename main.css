@@ -1,0 +1,146 @@
+/* Einfassung der Seite*/
+.main{
+    width: 1080px;
+    height: 1000px;
+    background-color: #23272a;
+    margin: auto;
+    position: relative;
+}
+/*Kopfzeile mit Logo*/
+.head{
+    background-color: #23272a;
+    text-align: center;
+}    
+/*Hauptinformationstexte*/
+.mainInformation{
+    text-align: center;
+    color: white;
+    background-color: #23272a;
+}
+/*Tabelle der Gründungsmitglieder*/
+.gruendungsImg{
+    width: 50%;
+    border-radius: 1rem;
+}
+/*Listen*/
+.list{
+    margin-left: 30%;
+    position: center;
+    text-align: left;
+}
+
+/*Kopfzeile im Navigationsmenue*/
+.headNavi{
+    padding-left: 33%;
+}
+    /*Alpha bild der Überschrift*/
+    .alphaImg{
+        width: 100px;
+        height: 100px;
+        background-color: #23272a;
+    }
+    /*Alpha bild der Überschrift im Navigationsmenue*/
+    .alphaImgNavi{
+        width: 100px;
+        height: 100px;
+    }
+    /*Überschrift*/
+    .headline{
+        font-size: 150px;
+        color: orange;
+        background-color: #23272a;
+    }
+    /*Überschrift des Navigationsmenue*/
+    .headlineNavi{
+        font-size: 150px;
+        color: orange;
+    }
+    /*Unterschrift der Überschrift*/
+    .subtitle{
+        font-size: 50px;
+        color: orange;
+        background-color: #23272a;
+    }
+    /*Kleines Copyright C*/
+    .copyright{
+    font-size: 15px;
+    }
+/*Button für das Navigationsfenster*/
+.button{
+    display: block;
+    position: absolute; 
+	right: 2%; top: 2%;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;    
+}
+
+.button .bar, .button:after, .button:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.button.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.button.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.button.is-active .bar{
+    opacity: 0%;
+}
+/*Navigationsfenster*/
+.nav{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    right: 0%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #2c2f33;
+    padding-top: 120px;
+    transition: 0.4s;
+    opacity: 0%;
+}
+
+.nav.is-active{
+    left: 0%;
+    opacity: 98%;
+}
+
+.nav a {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: #23272a;
+
+    color: orange;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: darkgray;
+    transition: 1s;
+}
+
+
+/*Generelle Hintergrundfarbe*/
+body{
+    background-color: #2c2f33;
+}
